@@ -21,17 +21,7 @@
 ////@end
 //
 //
-//@interface BBEvent ()
-//
-//+ (void)startSwift:(UIApplication *)app;
-//+ (void)sendTouch:(UIApplication *)application atX:(int)x atY:(int)y;
-//+ (void)sendTouchToView:(UIView *)view  atX:(int)x atY:(int)y;
-//+ (void)sendTouchAtX:(int)x atY:(int)y;
-//+ (void)sendTouchWindowAt:(int)x atY:(int)y;
-//+ (void)sendTouchWindow;
-//
-//
-//@end
+
 
 @implementation BBTrace
 @end
