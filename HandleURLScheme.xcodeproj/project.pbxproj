@@ -88,7 +88,7 @@
 		B17613B729E223FD0047A69B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B17613B929E224290047A69B /* DebugVisualizerWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DebugVisualizerWindow.swift; path = HandleURLScheme/DebugVisualizerWindow.swift; sourceTree = "<group>"; };
 		B17613BC29E39D6A0047A69B /* BBEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBEvent.h; sourceTree = "<group>"; };
-		B1BF07E729BEE188001958AB /* libHandleURLScheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHandleURLScheme.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BF07E729BEE188001958AB /* libHandleURLScheme.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHandleURLScheme.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BF07EA29BEE188001958AB /* HandleURLScheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HandleURLScheme.h; sourceTree = "<group>"; };
 		B1BF07EB29BEE188001958AB /* HandleURLScheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandleURLScheme.m; sourceTree = "<group>"; };
 		B1BF07F329BEE1AB001958AB /* KZRMethodSwizzlingWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZRMethodSwizzlingWithBlock.h; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		B1BF07E829BEE188001958AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1BF07E729BEE188001958AB /* libHandleURLScheme.a */,
+				B1BF07E729BEE188001958AB /* libHandleURLScheme.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			packageProductDependencies = (
 			);
 			productName = HandleURLScheme;
-			productReference = B1BF07E729BEE188001958AB /* libHandleURLScheme.a */;
+			productReference = B1BF07E729BEE188001958AB /* libHandleURLScheme.dylib */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -387,13 +387,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J224A9FKGZ;
+				EXECUTABLE_EXTENSION = dylib;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -411,13 +412,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J224A9FKGZ;
+				EXECUTABLE_EXTENSION = dylib;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
+				MACH_O_TYPE = mh_dylib;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
